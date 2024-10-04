@@ -99,8 +99,7 @@
           <h2 data-aos="fade-up" data-aos-delay="100">
             Extending Defeasible Reasoning Beyond Rational Closure
           </h2>
-          <p data-aos="fade-up" data-aos-delay="200">
-          </p>
+          <p data-aos="fade-up" data-aos-delay="200"></p>
           <!-- <div data-aos="fade-up" data-aos-delay="300">
           <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
         </div> -->
@@ -151,16 +150,14 @@
                 Propositional logic is introduced as the formal system to reason
                 about atomic propositions. Boolean operators like AND, OR, and
                 NOT are used to combine propositions, with rules of precedence
-                for evaluating logical expressions. 
-                
-                The semantics of propositional logic are discussed through interpretations (truth
+                for evaluating logical expressions. The semantics of
+                propositional logic are discussed through interpretations (truth
                 assignments) and the concept of satisfaction and models of
-                formulas. 
-                
-                Entailment is the notion that using the relationship between two or
-                more statements one can make deductions or conclusions . This is
-                a fundamental concept in reasoning, it formally shows how certain
-                states of the world are logical consequence of others.
+                formulas. Entailment is the notion that using the relationship
+                between two or more statements one can make deductions or
+                conclusions . This is a fundamental concept in reasoning, it
+                formally shows how certain states of the world are logical
+                consequence of others.
               </p>
             </div>
 
@@ -317,48 +314,111 @@
         <div class="container section-title" data-aos="fade-up">
           <h2>Optimization</h2>
           <p>
-            Traditional reasoning methods based on classical logic often fall short, as they do not accommodate the complexities of real-world scenarios. Defeasible reasoning, particularly through the KLM framework, offers a solution by allowing conclusions to be retracted in light of new information, thereby providing a more flexible approach to AI decision-making.
+            Traditional reasoning methods based on classical logic often fall
+            short, as they do not accommodate the complexities of real-world
+            scenarios. Defeasible reasoning, particularly through the KLM
+            framework, offers a solution by allowing conclusions to be retracted
+            in light of new information, thereby providing a more flexible
+            approach to AI decision-making.
           </p>
-          <p>
-            Despite the theoretical advancements in rational closure, there have been few practical implementations, leaving a significant gap in research. Moreover, rational closure is inherently not well-suited for large knowledge bases due to its linear nature, which makes the process inefficient and unscalable. Given the increasing complexity of real-world AI applications, optimizing rational closure to handle large knowledge bases efficiently is crucial. This paper addresses these issues by exploring optimization techniques, such as caching and advanced search algorithms, to enhance the scalability of rational closure, making it applicable to larger, more complex systems.
+          <p style="margin-top: 8px">
+            Despite the theoretical advancements in rational closure, there have
+            been few practical implementations, leaving a significant gap in
+            research. Moreover, rational closure is inherently not well-suited
+            for large knowledge bases due to its linear nature, which makes the
+            process inefficient and unscalable. Given the increasing complexity
+            of real-world AI applications, optimizing rational closure to handle
+            large knowledge bases efficiently is crucial. This paper addresses
+            these issues by exploring optimization techniques, such as caching
+            and advanced search algorithms, to enhance the scalability of
+            rational closure, making it applicable to larger, more complex
+            systems.
           </p>
         </div>
         <!-- End Section Title -->
         <div class="container">
           <div class="row gy-4">
             <!-- Aims Section -->
-            <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="150">
-              <h2>Aims</h2>
+            <div
+              class="col-lg-12 content"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <h3>Aims</h3>
               <p>
-                The primary goal of this research is to optimize the Rational Closure algorithm for defeasible reasoning. We aim to evaluate the effects of caching and search algorithms (binary and ternary searches) on the algorithm’s performance. By improving the scalability and efficiency of Rational Closure, we hope to extend its practical applicability, particularly in systems that handle large knowledge bases and complex queries.
+                The primary goal of this research is to optimize the Rational
+                Closure algorithm for defeasible reasoning. We aim to evaluate
+                the effects of caching and search algorithms (binary and ternary
+                searches) on the algorithm’s performance. By improving the
+                scalability and efficiency of Rational Closure, we hope to
+                extend its practical applicability, particularly in systems that
+                handle large knowledge bases and complex queries.
               </p>
             </div>
-        
+
             <!-- Implementation Section -->
-            <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="200">
-              <h2>Implementation</h2>
+            <div
+              class="col-lg-12 content"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <h3>Implementation</h3>
               <p>
-                We developed six different defeasible reasoners, including naive, binary, and ternary entailment checkers. These reasoners were built on the foundational work of previous researchers and employed the Sat4j solver for satisfiability checks. The binary and ternary reasoners utilize search algorithms to optimize the ranking process, while caching mechanisms were introduced to minimize redundant calculations. The research also introduced two caching strategies: antecedent-based caching, which stores and reuses ranks associated with queries, and full-query caching, which stores entire query results for repeated use.
+                We developed six different defeasible reasoners, including
+                naive, binary, and ternary entailment checkers. These reasoners
+                were built on the foundational work of previous researchers and
+                employed the Sat4j solver for satisfiability checks. The binary
+                and ternary reasoners utilize search algorithms to optimize the
+                ranking process, while caching mechanisms were introduced to
+                minimize redundant calculations. The research also introduced
+                two caching strategies: antecedent-based caching, which stores
+                and reuses ranks associated with queries, and full-query
+                caching, which stores entire query results for repeated use.
               </p>
             </div>
-        
+
             <!-- Results Section -->
-            <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="250">
-              <h2>Results</h2>
+            <div
+              class="col-lg-12 content"
+              data-aos="fade-up"
+              data-aos-delay="250"
+            >
+              <h3>Results</h3>
               <p>
-                The experimental results showed that both binary and ternary search methods consistently outperformed the naive implementation in terms of execution time, regardless of the size of the knowledge base. Below is a graph illustrating the comparison of execution times.
+                The experimental results showed that both binary and ternary
+                search methods consistently outperformed the naive
+                implementation in terms of execution time, regardless of the
+                size of the knowledge base. Below is a graph illustrating the
+                comparison of execution times.
               </p>
-              <img src="assets\img\Graph.png" alt="Execution Time Comparison Graph" class="img-fluid">
+              <img
+                src="assets/img/Graph.png"
+                alt="Execution Time Comparison Graph"
+                class="img-fluid"
+              />
             </div>
 
             <!-- Future Work Recommendations Section -->
-            <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="300">
-              <h2>Future Work Recommendations</h2>
+            <div
+              class="col-lg-12 content"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <h3>Future Work Recommendations</h3>
               <p>
-                Future research could explore the conditions under which ternary search outperforms binary, particularly in complex knowledge bases with irregular rank distributions. Additionally, further investigation into optimizing cache management for larger and more dynamic query sets would be beneficial. Exploring advanced query patterns and scaling to even larger knowledge bases will be essential to improving the practical applicability of Rational Closure in real-world AI systems.
+                Future research could explore the conditions under which ternary
+                search outperforms binary, particularly in complex knowledge
+                bases with irregular rank distributions. Additionally, further
+                investigation into optimizing cache management for larger and
+                more dynamic query sets would be beneficial. Exploring advanced
+                query patterns and scaling to even larger knowledge bases will
+                be essential to improving the practical applicability of
+                Rational Closure in real-world AI systems.
               </p>
+            </div>
           </div>
-        </div>        
+        </div>
+      </section>
       <!-- /Optimization Section -->
 
       <!-- Web App Section -->
@@ -747,6 +807,68 @@
             >
               <div class="service-item position-relative">
                 <div class="icon">
+                  <i class="bi bi-file-zip-fill"></i>
+                </div>
+                <a
+                  href="resources/mhlmaq001.zip"
+                  class="stretched-link"
+                  target="_blank"
+                >
+                  <h3>Source Code</h3>
+                  <h4>Maqhobosheane Mohlerepe</h4>
+                </a>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-file-zip-fill"></i>
+                </div>
+                <a
+                  href="resources/mlxtha036.zip"
+                  class="stretched-link"
+                  target="_blank"
+                >
+                  <h3>Source Code</h3>
+                  <h4>Thabo Vincent Moloi</h4>
+                </a>
+              </div>
+            </div>
+            <!-- End Service Item -->
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-file-zip-fill"></i>
+                </div>
+                <a
+                  href="resources/sdkmam001"
+                  class="stretched-link"
+                  target="_blank"
+                >
+                  <h3>Source Code</h3>
+                  <h4>Mamodike Sadiki</h4>
+                </a>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="service-item position-relative">
+                <div class="icon">
                   <i class="bi bi-file-earmark-pdf"></i>
                 </div>
                 <a
@@ -917,7 +1039,7 @@
                 ><i class="bi bi-envelope"></i>
                 <span>dept@cs.uct.ac.za</span></a
               >
-              <a href="https://sit.uct.ac.za"
+              <a href="https://sit.uct.ac.za" target="_blank"
                 ><i class="bi bi-globe"></i> <span>sit.uct.ac.za</span></a
               >
             </div>
@@ -935,7 +1057,10 @@
             <!-- You can delete the links only if you've purchased the pro version. -->
             <!-- Licensing information: https://bootstrapmade.com/license/ -->
             <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            Designed by
+            <a href="https://bootstrapmade.com/" target="_blank"
+              >BootstrapMade</a
+            >
           </div>
         </div>
       </div>

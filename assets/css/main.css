@@ -1898,11 +1898,14 @@ section,
   /* Add your styles here */
 }
 
-.overview.section h3 {
+.overview.section h3,
+.optimization.section h3,
+.kb-generation h3 {
   font-size: 24px;
-  font-weight: 700;
-}
-.overview.section h4 {
-  font-size: 18px;
   font-weight: 600;
+}
+.overview.section h4,
+.optimization.section h4 {
+  font-size: 18px;
+  font-weight: 500;
 }
