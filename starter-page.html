@@ -224,14 +224,18 @@
         <div class="container section-title" data-aos="fade-up">
           <h2>Knowledge Base Generation</h2>
           <p>
-            The main objectives of this knowledge base component of the project were to create a pseudo-random,
-             multi-threaded defeasible knowledge base generator for testing the rational closure algorithm and 
-             its extensions. The project also focused on optimizing the generator through parallel programming
-            improvements, reusing existing knowledge bases to leverage the space-time trade-off, and enhancing
-            the overall architecture. Additionally, it aimed to increase the expressiveness of generated knowledge
-            bases and analyze key parameters affecting the generation process. Overall, the goal was to bridge
-            the gap in platforms available for testing and developing reasoners. The generator’s 
-            performance was shaped by a set of <bold>control parameters</bold>, detailed in the following section.
+            The main objectives of this knowledge base component of the project
+            were to create a pseudo-random, multi-threaded defeasible knowledge
+            base generator for testing the rational closure algorithm and its
+            extensions. The project also focused on optimizing the generator
+            through parallel programming improvements, reusing existing
+            knowledge bases to leverage the space-time trade-off, and enhancing
+            the overall architecture. Additionally, it aimed to increase the
+            expressiveness of generated knowledge bases and analyze key
+            parameters affecting the generation process. Overall, the goal was
+            to bridge the gap in platforms available for testing and developing
+            reasoners. The generator’s performance was shaped by a set of
+            <bold>control parameters</bold>, detailed in the following section.
           </p>
         </div>
         <!-- End Section Title -->
@@ -307,103 +311,112 @@
                   >' and '<bold>penguins do not fly</bold>'.
                 </figcaption>
               </figure>
-             
             </div>
-         
           </div>
           <div
-          style="border: solid 2px; border-radius: 6px; border-color: #009961; background-color: #bbbbbb;"
-          class="container section-title"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          <h3>Optional operations:</h3>
-          <ul>
-            <li>
-              <i class="bi bi-check2-circle"></i>
-              <span
-                >Print the generated defeasible knowledge base to the
-                terminal</span
-              >
-            </li>
-            <li>
-              <i class="bi bi-check2-circle"></i>
-              <span>
-                Writing the generated knowledge base in a text file. In this
-                format the knowledge base can be used on reasoners.
-              </span>
-            </li>
-            <li>
-              <i class="bi bi-check2-circle"></i>
-              <span
-                >Saving the knowledge base in a database. This allows the
-                use of the optimized generator.
-              </span>
-            </li>
-            <li>
-              <i class="bi bi-check2-circle"></i>
-              <span
-                >Testing the generated knowledge base using a basebaserank
-                algorithm</span
-              >
-            </li>
-          </ul>
-        </div>
-        <div  class="row gy-4" data-aos="fade-up">
-          <h3>Results</h3>
-          <p>
-            The optimized knowledge base generator (KBG_Optimized) significantly reduced generation
-             time compared to the original KBG under the same control parameters. Testing across 10 different
-              defeasible knowledge bases, all with varying ranks, statements, and complexities, showed a 100% accuracy
-               rate with no errors. In the space-time trade-off test, it was found that using existing knowledge
-                bases for generation reduces time but increases storage requirements.
-                 Parameter analysis revealed weak correlations between individual parameters and generation time,
-                  with complexity and reuse of consequents being key factors.
-                  Further Monte Carlo simulations showed stronger correlations with certain distributions, 
-                  like linear decline and exponential growth, affecting generation time, while flat and random
-                   distributions had weaker correlations.
-          </p>
-        </div>
-        <div class="row gy-4">
-           <div class="row gy-4">
-                  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                    <figure class="image-right">
-                      <img style="width: 100%" src=".\assets\img\knowledge_results.png" />
-                    </figure>
-                  </div>
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                  <figure class="image-right">
-                    <img style="width: 100%" src=".\assets\img\knowledge_results_1.png" />
-                  </figure>
-                </div>
+            class="container section-title"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <h3>Optional operations:</h3>
+            <ul>
+              <li>
+                <i class="bi bi-check2-circle"></i>
+                <span
+                  >Print the generated defeasible knowledge base to the
+                  terminal</span
+                >
+              </li>
+              <li>
+                <i class="bi bi-check2-circle"></i>
+                <span>
+                  Writing the generated knowledge base in a text file. In this
+                  format the knowledge base can be used on reasoners.
+                </span>
+              </li>
+              <li>
+                <i class="bi bi-check2-circle"></i>
+                <span
+                  >Saving the knowledge base in a database. This allows the use
+                  of the optimized generator.
+                </span>
+              </li>
+              <li>
+                <i class="bi bi-check2-circle"></i>
+                <span
+                  >Testing the generated knowledge base using a basebaserank
+                  algorithm</span
+                >
+              </li>
+            </ul>
           </div>
-          <div class="d-flex justify-content-center align-items-center">
-            <a
-              class="btn-secondary"
-              href="https://github.com/Tryiphosa/EXTRC_Knowledge_base_generator.git"
-              target="_blank"
-            >
-              <i class="bi bi-github"></i> Source Code
-            </a>
+          <div class="row gy-4" data-aos="fade-up">
+            <h3>Results</h3>
+            <p>
+              The optimized knowledge base generator (KBG_Optimized)
+              significantly reduced generation time compared to the original KBG
+              under the same control parameters. Testing across 10 different
+              defeasible knowledge bases, all with varying ranks, statements,
+              and complexities, showed a 100% accuracy rate with no errors. In
+              the space-time trade-off test, it was found that using existing
+              knowledge bases for generation reduces time but increases storage
+              requirements. Parameter analysis revealed weak correlations
+              between individual parameters and generation time, with complexity
+              and reuse of consequents being key factors. Further Monte Carlo
+              simulations showed stronger correlations with certain
+              distributions, like linear decline and exponential growth,
+              affecting generation time, while flat and random distributions had
+              weaker correlations.
+            </p>
           </div>
-        </div>
-       
+          <div class="row gy-4">
+            <div class="row gy-4">
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                <figure class="image-right">
+                  <img
+                    style="width: 100%"
+                    src=".\assets\img\knowledge_results.png"
+                  />
+                </figure>
+              </div>
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                <figure class="image-right">
+                  <img
+                    style="width: 100%"
+                    src=".\assets\img\knowledge_results_1.png"
+                  />
+                </figure>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <a
+                class="btn-secondary"
+                href="https://github.com/Tryiphosa/extrc_kbg.git"
+                target="_blank"
+              >
+                <i class="bi bi-github"></i> Source Code
+              </a>
+            </div>
+          </div>
 
           <div class="container section-title" data-aos="fade-up">
             <h3>Future Work</h3>
             <p>
-              In future work, I recommend developing non-deterministic knowledge bases based 
-              on specific contexts or languages, such as English. This would involve understanding 
-              language concepts and translating them into propositional statements and connectives.
-               A defeasible knowledge base generator of this kind could create more realistic world 
-               representations, improving reasoners suited to specific environments. Additionally, 
-               implementing a propositional formula formatting feature in the generator would allow 
-               for more precise testing of reasoners, by specifying the desired formula format rather 
-               than just selecting connectives and complexity levels. </p>
+              In future work, I recommend developing non-deterministic knowledge
+              bases based on specific contexts or languages, such as English.
+              This would involve understanding language concepts and translating
+              them into propositional statements and connectives. A defeasible
+              knowledge base generator of this kind could create more realistic
+              world representations, improving reasoners suited to specific
+              environments. Additionally, implementing a propositional formula
+              formatting feature in the generator would allow for more precise
+              testing of reasoners, by specifying the desired formula format
+              rather than just selecting connectives and complexity levels.
+            </p>
           </div>
         </div>
       </section>
-      
+
       <!-- /Knowledge Base Generation Section -->
 
       <!-- Optimization Section -->
