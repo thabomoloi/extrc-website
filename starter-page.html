@@ -288,59 +288,241 @@
       <section id="webapp" class="webapp section">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-          <h2>Web Application</h2>
-          <p>
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-            consectetur velit
-          </p>
+          <h2>Web-Based Defeasible Reasoner</h2>
+          <!-- <p>
+            This web application tool implements two well-known forms of
+            defeasible entailment:
+            <em>rational closure</em> and <em>lexicographic closure</em>, and
+            demonstrates the reasoning process using the algorithms associated
+            with these forms.
+          </p> -->
+          <div class="d-flex justify-content-center align-items-center">
+            <a
+              class="btn"
+              href="https://thabomoloi.github.io/extrc/"
+              target="_blank"
+              ><i class="bi bi-globe"></i> Live Demo</a
+            >
+            <a
+              class="btn-secondary"
+              href="https://github.com/thabomoloi/extrc.git"
+              target="_blank"
+            >
+              <i class="bi bi-github"></i> Source Code
+            </a>
+          </div>
         </div>
         <!-- End Section Title -->
 
         <div class="container">
-          <div class="row gy-4">
+          <div class="content" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              This project developed a web-based tool designed to showcase
+              defeasible reasoning processes, specifically focusing on Rational
+              Closure and Lexicographic Closure. The application allows users to
+              input knowledge bases and queries, displaying the reasoning steps.
+              The software, built with
+              <strong>Java</strong> (back-end) and
+              <strong>TypeScript/ReactJS</strong>
+              (front-end), implements algorithms for defeasible entailment.
+            </p>
+            <p>
+              The back-end system employs the Javalin framework to create
+              RESTful APIs, enabling interaction between the front-end and core
+              reasoning algorithms, which leverage the
+              <a href="https://tweetyproject.org/" target="_blank"
+                >TweetyProject</a
+              >
+              library. The tool computes Base Rank, Rational Closure, and
+              Lexicographic Closure algorithms and displays results in a
+              structured manner, aiding in understanding how conclusions are
+              derived.
+            </p>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="200" class="portfolio">
+            <h3>Features</h3>
             <div
-              class="col-lg-6 content"
-              data-aos="fade-up"
-              data-aos-delay="100"
+              class="isotope-layout"
+              data-default-filter=".filter-query-inputs"
+              data-layout="masonry"
+              data-sort="original-order"
+              style="margin-top: 24px"
             >
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <ul>
-                <li>
-                  <i class="bi bi-check2-circle"></i>
-                  <span
-                    >Ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</span
-                  >
+              <ul
+                class="portfolio-filters isotope-filters"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <!-- <li data-filter="*" class="filter-active">All</li> -->
+                <li data-filter=".filter-query-inputs" class="filter-active">
+                  Query Inputs
                 </li>
-                <li>
-                  <i class="bi bi-check2-circle"></i>
-                  <span
-                    >Duis aute irure dolor in reprehenderit in voluptate
-                    velit.</span
-                  >
-                </li>
-                <li>
-                  <i class="bi bi-check2-circle"></i>
-                  <span>Ullamco laboris nisi ut aliquip ex ea commodo</span>
+                <li data-filter=".filter-summary">Summary</li>
+                <li data-filter=".filter-base-rank">Base Rank</li>
+                <li data-filter=".filter-rational-closure">Rational Closure</li>
+                <li data-filter=".filter-lexicograhic-closure">
+                  Lexicographic Closure
                 </li>
               </ul>
-            </div>
+              <!-- End Portfolio Filters -->
 
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
-              </p>
-              <a href="#" class="read-more"
-                ><span>Read More</span><i class="bi bi-arrow-right"></i
-              ></a>
+              <div
+                class="row gy-4 isotope-container"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="portfolio-item isotope-item filter-query-inputs">
+                  <img
+                    src="assets/img/app-query-forms.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>Query Forms</h4>
+                    <p>Edit query inputs</p>
+                    <a
+                      href="assets/img/app-query-forms.png"
+                      title="Edit query inputs"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- End Portfolio Item -->
+
+                <div class="portfolio-item isotope-item filter-query-inputs">
+                  <img
+                    src="assets/img/app-kb-upload.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>Upload Knowledge Base</h4>
+                    <p>Upload knowledge base</p>
+                    <a
+                      href="assets/img/app-kb-upload.png"
+                      title="Upload knowledge base"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- End Portfolio Item -->
+
+                <div class="portfolio-item isotope-item filter-query-inputs">
+                  <img
+                    src="assets/img/app-formulas.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>Query formula and knowledge base</h4>
+                    <p>Query formula and knowledge base</p>
+                    <a
+                      href="assets/img/app-formulas.png"
+                      title="Query formula and knowledge base"
+                      data-gallery="portfolio-gallery-app"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- End Portfolio Item -->
+
+                <div class="portfolio-item isotope-item filter-summary">
+                  <img
+                    src="assets/img/app-summary.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>Summary</h4>
+                    <p>Summary of entailment algorithms</p>
+                    <a
+                      href="assets/img/app-summary.png"
+                      title="Summary"
+                      data-gallery="portfolio-gallery-product"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- End Portfolio Item -->
+
+                <div class="portfolio-item isotope-item filter-base-rank">
+                  <img src="assets/img/app-base.png" class="img-fluid" alt="" />
+                  <div class="portfolio-info">
+                    <h4>Base Rank</h4>
+                    <p>Results from base rank algorithm</p>
+                    <a
+                      href="assets/img/app-base.png"
+                      title="Base Rank"
+                      data-gallery="portfolio-gallery-product"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- End Portfolio Item -->
+
+                <div
+                  class="portfolio-item isotope-item filter-rational-closure"
+                >
+                  <img
+                    src="assets/img/app-rational.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>Rational Closure</h4>
+                    <p>Results from rational closure algorithm</p>
+                    <a
+                      href="assets/img/app-rational.png"
+                      title="Rational Closure"
+                      data-gallery="portfolio-gallery-product"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+
+                <div
+                  class="portfolio-item isotope-item filter-lexicograhic-closure"
+                >
+                  <img src="assets/img/app-lex.png" class="img-fluid" alt="" />
+                  <div class="portfolio-info">
+                    <h4>Lexicographic Closure</h4>
+                    <p>Results from lexicographic closure algorithm</p>
+                    <a
+                      href="assets/img/app-lex.png"
+                      title="Lexicographic Closure"
+                      data-gallery="portfolio-gallery-product"
+                      class="glightbox preview-link"
+                      ><i class="bi bi-zoom-in"></i
+                    ></a>
+                  </div>
+                </div>
+                <!-- End Portfolio Item -->
+              </div>
+              <!-- End Portfolio Container -->
             </div>
+          </div>
+
+          <div
+            class=""
+            data-aos="fade-up"
+            data-aos-delay="200"
+            style="margin-top: 24px"
+          >
+            <p>
+              This tool demonstrates the defeasible reasoning process and serves
+              as a debugger for identifying exceptional knowledge base
+              statements. Future work will focus on extending the software to
+              handle other forms of defeasible entailment, such as Relevant
+              Closure.
+            </p>
           </div>
         </div>
       </section>
