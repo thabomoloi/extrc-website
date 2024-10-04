@@ -1345,7 +1345,7 @@ section,
   position: relative;
   overflow: hidden;
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 16px;
 }
 
@@ -1359,7 +1359,17 @@ section,
 
 .pricing .pricing-item h4 {
   color: var(--accent-color);
-  font-size: 14px;
+  font-size: 13px;
+  font-family: var(--default-font);
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  margin-top: 4px;
+}
+
+.pricing .pricing-item h5 {
+  color: var(--accent-color);
+  font-size: 13px;
   font-family: var(--default-font);
   font-weight: 500;
   padding: 0;
@@ -1382,7 +1392,7 @@ section,
 .pricing .pricing-item p {
   color: color-mix(in srgb, var(--default-color) 90%, white 50%);
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
   margin: 0;
   padding: 0;
 }
@@ -1900,7 +1910,8 @@ section,
 
 .overview.section h3,
 .optimization.section h3,
-.kb-generation h3 {
+.kb-generation h3,
+.webapp h3 {
   font-size: 24px;
   font-weight: 600;
 }
