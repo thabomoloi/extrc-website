@@ -6,7 +6,7 @@
     <title>Extending Defeasible Reasoning Beyond Rational Closure</title>
     <meta
       name="author"
-      content="Maqhobohseane Mohlerepe, Thabo Vincent Moloi, Mamodike Sadiki"
+      content="Maqhobosheane Mohlerepe, Thabo Vincent Moloi, Mamodike Sadiki"
     />
 
     <meta
@@ -91,7 +91,7 @@
     <main class="main">
       <!-- Hero Section -->
       <section id="hero" class="hero section dark-background">
-        <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" />
+        <img src="assets\img\background.png" alt="" data-aos="fade-in" />
 
         <div
           class="container d-flex flex-column align-items-center text-center"
@@ -100,7 +100,6 @@
             Extending Defeasible Reasoning Beyond Rational Closure
           </h2>
           <p data-aos="fade-up" data-aos-delay="200">
-            We are team of talented designers making websites with Bootstrap
           </p>
           <!-- <div data-aos="fade-up" data-aos-delay="300">
           <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
@@ -152,10 +151,16 @@
                 Propositional logic is introduced as the formal system to reason
                 about atomic propositions. Boolean operators like AND, OR, and
                 NOT are used to combine propositions, with rules of precedence
-                for evaluating logical expressions. The semantics of
-                propositional logic are discussed through interpretations (truth
+                for evaluating logical expressions. 
+                
+                The semantics of propositional logic are discussed through interpretations (truth
                 assignments) and the concept of satisfaction and models of
-                formulas.
+                formulas. 
+                
+                Entailment is the notion that using the relationship between two or
+                more statements one can make deductions or conclusions . This is
+                a fundamental concept in reasoning, it formally shows how certain
+                states of the world are logical consequence of others.
               </p>
             </div>
 
@@ -321,60 +326,48 @@
         <div class="container section-title" data-aos="fade-up">
           <h2>Optimization</h2>
           <p>
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-            consectetur velit
+            Traditional reasoning methods based on classical logic often fall short, as they do not accommodate the complexities of real-world scenarios. Defeasible reasoning, particularly through the KLM framework, offers a solution by allowing conclusions to be retracted in light of new information, thereby providing a more flexible approach to AI decision-making.
+          </p>
+          <p>
+            Despite the theoretical advancements in rational closure, there have been few practical implementations, leaving a significant gap in research. Moreover, rational closure is inherently not well-suited for large knowledge bases due to its linear nature, which makes the process inefficient and unscalable. Given the increasing complexity of real-world AI applications, optimizing rational closure to handle large knowledge bases efficiently is crucial. This paper addresses these issues by exploring optimization techniques, such as caching and advanced search algorithms, to enhance the scalability of rational closure, making it applicable to larger, more complex systems.
           </p>
         </div>
         <!-- End Section Title -->
-
         <div class="container">
           <div class="row gy-4">
-            <div
-              class="col-lg-6 content"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
+            <!-- Aims Section -->
+            <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="150">
+              <h2>Aims</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                The primary goal of this research is to optimize the Rational Closure algorithm for defeasible reasoning. We aim to evaluate the effects of caching and search algorithms (binary and ternary searches) on the algorithm’s performance. By improving the scalability and efficiency of Rational Closure, we hope to extend its practical applicability, particularly in systems that handle large knowledge bases and complex queries.
               </p>
-              <ul>
-                <li>
-                  <i class="bi bi-check2-circle"></i>
-                  <span
-                    >Ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</span
-                  >
-                </li>
-                <li>
-                  <i class="bi bi-check2-circle"></i>
-                  <span
-                    >Duis aute irure dolor in reprehenderit in voluptate
-                    velit.</span
-                  >
-                </li>
-                <li>
-                  <i class="bi bi-check2-circle"></i>
-                  <span>Ullamco laboris nisi ut aliquip ex ea commodo</span>
-                </li>
-              </ul>
+            </div>
+        
+            <!-- Implementation Section -->
+            <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="200">
+              <h2>Implementation</h2>
+              <p>
+                We developed six different defeasible reasoners, including naive, binary, and ternary entailment checkers. These reasoners were built on the foundational work of previous researchers and employed the Sat4j solver for satisfiability checks. The binary and ternary reasoners utilize search algorithms to optimize the ranking process, while caching mechanisms were introduced to minimize redundant calculations. The research also introduced two caching strategies: antecedent-based caching, which stores and reuses ranks associated with queries, and full-query caching, which stores entire query results for repeated use.
+              </p>
+            </div>
+        
+            <!-- Results Section -->
+            <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="250">
+              <h2>Results</h2>
+              <p>
+                The experimental results showed that both binary and ternary search methods consistently outperformed the naive implementation in terms of execution time, regardless of the size of the knowledge base. Below is a graph illustrating the comparison of execution times.
+              </p>
+              <img src="assets\img\Graph.png" alt="Execution Time Comparison Graph" class="img-fluid">
             </div>
 
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <!-- Future Work Recommendations Section -->
+            <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="300">
+              <h2>Future Work Recommendations</h2>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
+                Future research could explore the conditions under which ternary search outperforms binary, particularly in complex knowledge bases with irregular rank distributions. Additionally, further investigation into optimizing cache management for larger and more dynamic query sets would be beneficial. Exploring advanced query patterns and scaling to even larger knowledge bases will be essential to improving the practical applicability of Rational Closure in real-world AI systems.
               </p>
-              <a href="#" class="read-more"
-                ><span>Read More</span><i class="bi bi-arrow-right"></i
-              ></a>
-            </div>
           </div>
-        </div>
-      </section>
+        </div>        
       <!-- /Optimization Section -->
 
       <!-- Web App Section -->
@@ -646,7 +639,7 @@
                   target="_blank"
                 >
                   <h3>Literature Review</h3>
-                  <h4>Maqhobohseane Mohlerepe</h4>
+                  <h4>Maqhobosheane Mohlerepe</h4>
                 </a>
               </div>
             </div>
@@ -709,7 +702,7 @@
                   target="_blank"
                 >
                   <h3>Final Paper</h3>
-                  <h4>Maqhobohseane Mohlerepe</h4>
+                  <h4>Maqhobosheane Mohlerepe</h4>
                 </a>
               </div>
             </div>
@@ -772,7 +765,7 @@
                 >
                   <h3>Project Proposal</h3>
                   <h4>
-                    Maqhobohseane Mohlerepe, Thabo Vincent Moloi, and Mamodike
+                    Maqhobosheane Mohlerepe, Thabo Vincent Moloi, and Mamodike
                     Sadiki
                   </h4>
                 </a>
@@ -796,7 +789,7 @@
                 >
                   <h3>Project Poster</h3>
                   <h4>
-                    Maqhobohseane Mohlerepe, Thabo Vincent Moloi, and Mamodike
+                    Maqhobosheane Mohlerepe, Thabo Vincent Moloi, and Mamodike
                     Sadiki
                   </h4>
                 </a>
@@ -830,7 +823,7 @@
                   <i class="bi bi-person"></i>
                 </div>
                 <div class="details">
-                  <h3>Maqhobohseane Mohlerepe</h3>
+                  <h3>Maqhobosheane Mohlerepe</h3>
                   <p>Team member</p>
                   <h4>
                     <a href="mailto:mhlmaq001@myuct.ac.za">
