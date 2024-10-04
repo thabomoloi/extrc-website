@@ -355,18 +355,23 @@
             <p>
               The optimized knowledge base generator (KBG_Optimized)
               significantly reduced generation time compared to the original KBG
-              under the same control parameters. Testing across 10 different
-              defeasible knowledge bases, all with varying ranks, statements,
-              and complexities, showed a 100% accuracy rate with no errors. In
-              the space-time trade-off test, it was found that using existing
-              knowledge bases for generation reduces time but increases storage
-              requirements. Parameter analysis revealed weak correlations
-              between individual parameters and generation time, with complexity
-              and reuse of consequents being key factors. Further Monte Carlo
-              simulations showed stronger correlations with certain
-              distributions, like linear decline and exponential growth,
-              affecting generation time, while flat and random distributions had
-              weaker correlations.
+              under identical control parameters. Tests across 10 different
+              defeasible knowledge bases, each with varying ranks and
+              statements, confirmed that the generators consistently produced
+              knowledge bases with the correct number of statements and ranks,
+              as verified by the baserank algorithm. Additionally, the
+              expressiveness of the pseudo-random defeasible knowledge base
+              generator was enhanced by incorporating antecedent and consequent
+              complexity, leading to more diverse and intricate knowledge bases.
+              The space-time trade-off analysis revealed that while using
+              existing knowledge bases reduced generation time, it increased
+              storage requirements. Parameter analysis indicated weak
+              correlations between most parameters and generation time, with
+              complexity and the reuse of consequents having the strongest
+              impact. Monte Carlo simulations demonstrated stronger correlations
+              with specific distributions, such as linear decline and
+              exponential growth, which significantly affected generation time,
+              while flat and random distributions exhibited weaker effects.
             </p>
           </div>
           <div class="row gy-4">
