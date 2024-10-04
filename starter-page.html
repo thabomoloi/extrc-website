@@ -166,8 +166,12 @@
         <div class="container section-title" data-aos="fade-up">
           <h2>Knowledge Base Generation</h2>
           <p>
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-            consectetur velit
+            The objective was to create a pseudo-random multi-threaded
+            defeasible knowledge base generator, optimize it using the
+            space-time trade-off method, and study the control parameters
+            involved in the generation process. The generator was designed to
+            bridge the gap caused by the lack of platforms for testing and
+            developing reasoners.
           </p>
         </div>
         <!-- End Section Title -->
@@ -179,43 +183,107 @@
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
+              <h3>Control parameters:</h3>
+              <ul>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span>Generator type</span>
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span>Number of Ranks</span>
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span>Knowledge base distribution</span>
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span
+                    >Minimum number of statements required in each rank</span
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span> Number of statements </span>
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span>Ratio of classical to defeasible statements</span>
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span> Reusing consequents or not </span>
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span> Having transitive relations in ranks or not</span>
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span> Antecedent and Consequent Complexity</span>
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span> Boolean Connectives</span>
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span>Character set</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <figure class="image-right">
+                <img style="width: 100%" src=".\assets\img\knowledge.png" />
+
+                <figcaption>
+                  The defeasible knowledge base above is an example with 2
+                  ranks, 3 statements, and employs negation and material
+                  implication as Boolean connectives. It features a 0:1 ratio of
+                  classical to defeasible statements. Overall, it presents the
+                  information: '<bold>birds fly</bold>','<bold
+                    >penguins are birds</bold
+                  >' and '<bold>penguins do not fly</bold>'.
+                </figcaption>
+              </figure>
+            </div>
+            <div
+              class="col-lg-6 content"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <h3>Optional operations:</h3>
               <ul>
                 <li>
                   <i class="bi bi-check2-circle"></i>
                   <span
-                    >Ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</span
+                    >Print the generated defeasible knowledge base to the
+                    terminal</span
                   >
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle"></i>
+                  <span>
+                    Writing the generated knowledge base in a text file. In this
+                    format the knowledge base can be used on reasoners.
+                  </span>
                 </li>
                 <li>
                   <i class="bi bi-check2-circle"></i>
                   <span
-                    >Duis aute irure dolor in reprehenderit in voluptate
-                    velit.</span
-                  >
+                    >Saving the knowledge base in a database. This allows the
+                    use of the optimized generator.
+                  </span>
                 </li>
                 <li>
                   <i class="bi bi-check2-circle"></i>
-                  <span>Ullamco laboris nisi ut aliquip ex ea commodo</span>
+                  <span
+                    >Testing the generated knowledge base using a basebaserank
+                    algorithm</span
+                  >
                 </li>
               </ul>
-            </div>
-
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
-              </p>
-              <a href="#" class="read-more"
-                ><span>Read More</span><i class="bi bi-arrow-right"></i
-              ></a>
             </div>
           </div>
         </div>
