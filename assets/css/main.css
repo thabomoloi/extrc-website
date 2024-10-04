@@ -255,19 +255,19 @@ h6 {
   color: var(--heading-color);
 }
 
-.header .cta-btn,
-.header .cta-btn:focus {
+.cta-btn,
+.cta-btn:focus {
   color: var(--contrast-color);
   background: var(--accent-color);
-  font-size: 14px;
+  font-size: 18px;
   padding: 8px 26px;
   margin: 0;
   border-radius: 50px;
   transition: 0.3s;
 }
 
-.header .cta-btn:hover,
-.header .cta-btn:focus:hover {
+.cta-btn:hover,
+.cta-btn:focus:hover {
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
